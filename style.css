@@ -140,7 +140,7 @@ a {
   color:
 }
 .buttonslabel {
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 .buttoncontainer {
   width: 100%;
@@ -157,17 +157,19 @@ a {
   border: 0.1em solid #b6e9c1;
   font-size: 2em;
 }
+.resetcontainer {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
 .resetbutton {
   display: none;
-  box-sizing: border-box;
-  width: auto;
-  margin: auto 0.5em auto 0.5em;
+  margin: auto 40% auto 40%;
   padding: 0.1em;
   border-radius: 5px;
   border: 0.1em solid #b6e9c1;
   font-size: 1.5em;
-  position: relative;
-  left: 42%;
 }
 .buttons.hide{display: none;}
 .resetbutton.show{display: inline-block;}
@@ -211,6 +213,7 @@ input #choice ::placeholder {
   }
 }
 
+
 @media only screen and (max-width: 585px){
   body {
     font-size: 11px;
@@ -221,7 +224,13 @@ input #choice ::placeholder {
   .triangles {
     top: 61%;
   }
+  .resetbutton {
+    margin: auto 30% auto 30%;
+  }
 }
+
+
+
 @media only screen and (max-width: 485px){
 
 .labels{
@@ -230,5 +239,28 @@ input #choice ::placeholder {
 h3{
   margin-right: 10px;
   margin-left: 10px;
+}
+
+.playerhand, .comphand {
+  height: 200px;
+  width: auto;
+}
+.bottom{
+  height: auto;
+  top: 417px;
+}
+.labels {
+  top: 370px;
+}
+.triangles {
+  top: 300px;
+}
+
+
+}
+
+@media only screen and (max-width: 355px){
+h2{
+  font-size: 30px;
 }
 }
