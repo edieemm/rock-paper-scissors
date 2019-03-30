@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  font-family: 'ocr-a', cursive;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #eefbeb;
+}
+
+
+/* section backgrounds*/
+.top, .bottom {
+  background-color: #003659;
+
+}
+
+.top, .middle, .bottom {
+  width: 100%;
+}
+
+.top {
+position: relative;
+top: 0;
+}
+
+
+.bottom{
+  position: fixed;
+  bottom: 0;
+  height: 25%;
+  z-index: 10;
+}
+
+/* all text */
+h1, h2, h3, h4, {
+
+}
+
+/* top and bottom text */
+h1, h2, h4, a {
+  color: #b6e9c1;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+
+}
+
+/* top banner */
+h2 {
+  text-transform: uppercase;
+  font-size: 4em;
+  letter-spacing: 0.2em;
+  margin: 1.5em 0 0.5em 0;
+}
+/*middle banner*/
+.middle, .player, .computer{
+  display: flex;
+  justify-content: space-around;
+}
+.player, .computer{
+  top: 20%
+}
+.playerhand, .comphand {
+  display: none;
+  margin: 0 10% 0 10%;
+  padding: 0;
+  height: 270px;
+  width: auto;
+  bottom: -50px;
+}
+/*.playerhand{
+  left: 35%;
+}
+.comphand {
+  left: 10%;
+}*/
+
+.playerhand.show{display: inline-block;}
+.comphand.show{display: inline-block;}
+
+
+/* labels */
+
+.labels, .triangles {
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  display: flex;
+
+}
+.labels {
+  top: 61%;
+  z-index: 5;
+  justify-content: space-around;
+}
+.triangles {
+  top: 55%;
+  justify-content: space-around;
+  flex-shrink: 2;
+}
+
+h3 {
+  color: #003659;
+  font-size: 2em;
+}
+
+.bkgdimg{
+  max-height: 120px;
+
+}
+
+
+/* bottom banner */
+h1 {
+  font-size: 5em;
+  display: none;
+  margin-bottom: 10px;
+  margin-top: 0.25em;
+}
+#win {
+  text-transform: uppercase;
+}
+
+h4 {
+font-size: 2em;
+}
+#calculating{
+  display: none;
+}
+#error{
+  display: none;
+}
+.foot.show{display: inline-block;}
+.lose.show{display: inline-block;}
+.win.show{display: inline-block;}
+.tie.show{display: inline-block;}
+
+/*buttons*/
+a {
+  text-decoration: none;
+  color:
+}
+.buttonslabel {
+  margin-bottom: 0.5em;
+}
+.buttoncontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  width: auto;
+  margin: auto 0.5em auto 0.5em;
+  padding: 0.1em;
+  border-radius: 5px;
+  border: 0.1em solid #b6e9c1;
+  font-size: 2em;
+}
+.resetbutton {
+  display: none;
+  box-sizing: border-box;
+  width: auto;
+  margin: auto 0.5em auto 0.5em;
+  padding: 0.1em;
+  border-radius: 5px;
+  border: 0.1em solid #b6e9c1;
+  font-size: 1.5em;
+  position: relative;
+  left: 42%;
+}
+.buttons.hide{display: none;}
+.resetbutton.show{display: inline-block;}
+/*input for player decision*/
+/*input {
+    box-sizing: border-box;
+    background-color: #003659;
+    cursor: text;
+    width: 40%;
+    margin: 30px 30% auto 30%;
+    padding: 2px;
+    border-radius: 5px;
+    border: 0.1em solid #b6e9c1;
+    font-family: 'ocr-a', cursive;
+    font-size: 2em;
+}
+::placeholder {
+  font-family: 'ocr-a', cursive;
+  font-size: 1em;
+}
+
+input #choice ::placeholder {
+}
+*/
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px){
+  body {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 870px){
+  body {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 585px){
+  body {
+    font-size: 11px;
+  }
+  .labels {
+    top: 69%;
+  }
+  .triangles {
+    top: 61%;
+  }
+}
+@media only screen and (max-width: 485px){
+
+.labels{
+  justify-content: space-between;
+}
+h3{
+  margin-right: 10px;
+  margin-left: 10px;
+}
+}
