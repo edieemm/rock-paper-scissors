@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="ocr-a.tff" rel="stylesheet">
+    <script type="text/javascript" src="rps.js"></script>
+  </head>
+  <body>
+
+    <div class="top">
+      <h2>Rock Paper Scissors</h2>
+    </div>
+
+
+    <div class="middle">
+      <div class="player">
+        <img class="playerhand" id="paper" src="img/p_play.png" alt="Paper">
+        <img class="playerhand" id="rock" src="img/r_play.png" alt="Rock">
+        <img class="playerhand" id="scissors" src="img/s_play.png" alt="Scissors">
+      </div>
+      <div class="computer">
+        <img class="comphand" id="cpaper" src="img/p_comp.png" alt="Paper">
+        <img class="comphand" id="crock" src="img/r_comp.png" alt="Rock">
+        <img class="comphand" id="cscissors" src="img/s_comp.png" alt="Scissors">
+      </div>
+      <div class="labels">
+        <h3 id='playlabel' >Player</h3>
+        <h3 id='complabel'>Computer</h3>
+      </div>
+      <div class="triangles">
+        <img class="bkgdimg" id="bkgdPlay" src="img/bkgd_play.png" alt="Player">
+        <img class="bkgdimg" id="bkgdComp" src="img/bkgd_comp.png" alt="Computer">
+      </div>
+    </div>
+
+
+    <div class="bottom">
+      <div class="buttons" id='buttons' >
+        <h4 class="buttonslabel" >Select your choice...</h4>
+        <div class="buttoncontainer">
+          <a href="#" class="button" onclick="playGame('rock');">Rock</a>
+          <a href="#" class="button" onclick="playGame('paper');">Paper</a>
+          <a href="#" class="button" onclick="playGame('scissors');">Scissors</a>
+        </div> </div>
+      <!--<input class="foot" id="choice" placeholder="Enter your choice...">-->
+      <h4 class="foot" id="calculating">calculating...</h4>
+      <h4 class="foot" id="error">ERROR: please enter valid input</h4>
+      <h1 class="win" id="win">You Win!</h1>
+      <h1 class="lose" id="lose">You Lose</h1>
+      <h1 class="tie" id="tie">Tie Game</h1>
+      <a href="#" class="resetbutton" id='reset' onclick="playGame();">Reset</a>
+
+    </div>
+
+  </body>
+</html>
