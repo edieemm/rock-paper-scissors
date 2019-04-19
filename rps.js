@@ -41,8 +41,8 @@ function determineWinner(userChoice, computerChoice) {
   }
 };
 
+let playGame = (choice) => {
 
-function playGame(choice) {
     document.getElementById('paper').className ='playerhand';
     document.getElementById('cpaper').className ='comphand';
     document.getElementById('rock').className ='playerhand';

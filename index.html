@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="ocr-a.tff" rel="stylesheet">
+    <link href="style.css"  rel="stylesheet">
+    <link href="OCRAStd.otf" rel="stylesheet">
     <script type="text/javascript" src="rps.js"></script>
   </head>
   <body>
@@ -40,9 +40,9 @@
       <div class="buttons" id='buttons' >
         <h4 class="buttonslabel" >Select your choice...</h4>
         <div class="buttoncontainer">
-          <a href="#" class="button" onclick="playGame('rock');">Rock</a>
-          <a href="#" class="button" onclick="playGame('paper');">Paper</a>
-          <a href="#" class="button" onclick="playGame('scissors');">Scissors</a>
+          <a href="#" class="button" id = 'rock-button' onclick="playGame('rock');">Rock</a>
+          <a href="#" class="button" id = 'paper-button' onclick="playGame('paper');">Paper</a>
+          <a href="#" class="button" id = 'scissors-button' onclick="playGame('scissors');">Scissors</a>
         </div> </div>
       <!--<input class="foot" id="choice" placeholder="Enter your choice...">-->
       <h4 class="foot" id="calculating">calculating...</h4>
