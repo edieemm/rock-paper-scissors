@@ -1,11 +1,6 @@
-@font-face {
-    font-family: 'OCRAStd';
-    src: url("OCRAStd.otf") format("opentype");
-}
-
- body {
+body {
   margin: 0;
-  font-family: 'OCRAStd', cursive;
+  font-family: 'Dokdo', cursive;
   font-size: 16px;
   box-sizing: border-box;
   background-color: #eefbeb;
@@ -31,7 +26,7 @@ top: 0;
 .bottom{
   position: fixed;
   bottom: 0;
-  height: 25%;
+  height: 30%;
   z-index: 10;
 }
 
@@ -224,7 +219,7 @@ input #choice ::placeholder {
     font-size: 11px;
   }
   .labels {
-    top: 69%;
+    top: 60%;
   }
   .triangles {
     top: 61%;
@@ -238,9 +233,7 @@ input #choice ::placeholder {
 
 @media only screen and (max-width: 485px){
 
-.labels{
-  justify-content: space-between;
-}
+
 h3{
   margin-right: 10px;
   margin-left: 10px;
